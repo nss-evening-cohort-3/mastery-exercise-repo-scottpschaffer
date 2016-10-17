@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    tr:nth-child(even){
+        background-color: #dddddd;
+    }
+</style>
+<h2>Students</h2>
+
+<table align="center">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Major</th>
+    </tr>
+
+    @foreach(var stud in ViewBag.ListOfStudents)
+    {
+        <tr>
+            <td>@stud.FirstName</td>
+            <td>@stud.LastName</td>
+            <td>@stud.Major</td>
+        </tr>
+        
+    }
+</table>
+

@@ -56,5 +56,10 @@ namespace RepoQuiz.DAL
             }
             return st;
         }
+
+        public List<Student> GetStudentsFromDB()
+        {
+            return Context.Students.ToList();
+        }
     }
 }
