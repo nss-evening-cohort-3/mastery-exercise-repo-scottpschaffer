@@ -48,9 +48,9 @@ namespace RepoQuiz.DAL
                 Student s1 = new Student();
                 s1.StudentID = (i + 1);
                 s1.FirstName = ng.GetFirstName();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 s1.LastName = ng.GetLastName();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 s1.Major = ng.GetMajor();
                 st.Add(s1);
             }
